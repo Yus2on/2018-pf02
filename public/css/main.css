@@ -1,0 +1,45 @@
+@import 'base.css';
+
+.wrap {width: 1980px; margin: 0 auto;}
+
+header {width:100%; margin:auto; padding-top:4rem; position: fixed; background-color: #fff;}
+.hd-top {width:100%; max-width:1440px; margin:auto;}
+.hd-sns {float:left; }
+.hd-sns > li { margin-right:1rem; cursor: pointer;}
+.hd-mymenu {float:right; padding-right:6.8%;}
+.hd-mymenu > li {float:left; margin-left:1rem; cursor: pointer;}
+.logo {position:absolute; top:40px; left:50%; transform:translateX(-50%);
+     max-width:200px; width:100%; cursor: pointer;}
+
+nav {width:100%; background-color:#a8121a; margin-top:1rem;}
+.navs {width:100%; max-width:1440px; margin:auto;}
+.navs > li {float:left; width:16.66%; padding:1rem; text-align:center; color:#fff; }
+.navs > li > a { text-decoration: none; color: #fff;}
+.navs > li a:hover {color: black}
+.navs > li:nth-child(1) {background-color: #890e15}
+
+.m-banner { width: 100%; height: 850px; padding-top:10.5rem;}
+
+/* 
+.hd1 {min-width:1440px; height:200px; position: fixed; width: 100%; background-color: rgb(59, 94, 122); 
+     border-bottom: 5px solid black;}
+
+.hd-snss {clear: both; content: "";}
+.hd-float-left li { display: inline-block; float: left;  padding: 5px; cursor: pointer; margin-top:50px;}
+.hd-float-left li a {}
+
+.hd-logo-wrap {position: relative;}
+.hd-logo {cursor: pointer;  position: absolute; margin: 0 auto; width: 50%; }
+.hd-logo > img {width: 130px; }
+
+.hd-subm {clear: both; content: "";}
+.hd-float-right > li { display: inline-block; float: right; }
+.hd-float-right > li > a {display: block; padding: 10px 20px; text-decoration: none; color: black}
+.hd-float-right > li > a:hover {color: red}
+ */
+.hd-main-m { background-color: red; height: 56px; margin-top: 80px; text-align: center;}
+.hd-main-menu  li {display: inline-block; padding: 15px 20px; }
+.hd-main-menu  li a {text-decoration: none; color:white; }
+.hd-main-menu  li:hover{background-color: #fff; }
+.hd-main-menu  li:hover a { color:black }
+
