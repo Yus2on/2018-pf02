@@ -45,7 +45,7 @@ nav {width:100%; background-color:#a8121a; margin-top:1rem;}
 
 
 .eve-ul {text-align: center; }
-.eve-ul > li { display: inline-block; }
+.eve-ul >  li { display: inline-flex; }
 .eve-ul > li > a { text-decoration: none; color: black;  }
 .eve-ul > li > img {}
 .eve-ul > li > a > span { display: block; }
