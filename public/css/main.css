@@ -22,42 +22,7 @@ header {width:100%; margin:auto; padding-top:4rem; position: fixed; background-c
 
 
 
-
-
-
-
-     @media screen and (max-width:480px){
-          .logo >img:first-child {display:inline-block; width: 80%; margin-left: -81px} 
-          /* .logo >img:last-child {position: display:inline-block; left: 0;} */
-          .hd-sns, .navs, .sub-navs {display: none;} 
-          .hd-mymenu {font-size: 10px}
-          .spinner-master * {transition: all 0.3s;  box-sizing: border-box; }
-          .spinner-master { position: relative; margin: 15px; height: 30px; width: 30px;  float: right;   }
-          .spinner-master label {cursor: pointer;  position: absolute; z-index: 99; height: 100%;
-               width: 100%; left: 0; margin-top: -30px   }
-          .spinner-master .spinner { position: absolute; height: 4px; width: 100%; padding: 0;
-               background-color: #000;}   
-          .spinner-master .diagonal.part-1 { position: relative; float: right;  }
-          .spinner-master .horizontal { position: relative; float: right; margin-top: 4px; }
-          .spinner-master .diagonal.part-2 { position: relative; float: right; margin-top: 4px; }
-          .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .horizontal { opacity: 0; }
-          .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-1 { transform: rotate(135deg);
-                    -webkit-transform: rotate(135deg); margin-top: 10px; }
-          .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-2 {transform: rotate(-135deg);
-               -webkit-transform: rotate(-135deg); margin-top: -12px;}
-          .m-banner img { width: 100%;}       
-          .m-at ul li a {display: inline; }
-          .m-ats img {width: 300px; display: block; }
-
-
-     }
-     @media screen and (max-width:580px){
-          .logo >img:first-child {display:inline-block; width: 80%; margin-left: -81px} 
-          .hd-sns {display: none;} 
-          .hd-mymenu {display: none;}
-
-     }
-
+    
 
 
 
@@ -100,9 +65,10 @@ nav {width:100%; background-color:#a8121a; margin-top:1rem;}
 
 .m-atf {background-color: #efeff0; }
 .m-at { width: 100%; max-width: 1440px; margin: auto; text-align: center; }
-.m-ats {display: inline-block;}
-.m-atf > .at-l {float: left;}
-.m-atf > .at-r {float:right;}
+.m-ats {display: inline-block; width:100%; }
+.m-atf .at-l {float: left; width:23.3%; margin-right:1.2%;}
+.m-atf .at-m {float: left; width:51%;}
+.m-atf .at-r {float: right; width:23.3%; margin-left:1.2%;}
 .sca_img { transform: scale(1); -webkit-transform: scale(1);  -moz-transform: scale(1);
      -ms-transform: scale(1); -o-transform: scale(1); transition: all 0.3s ease-in-out;}
 .sca_img:hover { cursor:pointer; transform: scale(1.1); -webkit-transform: scale(1.2);
@@ -110,12 +76,8 @@ nav {width:100%; background-color:#a8121a; margin-top:1rem;}
      transition: transform .3s;  -o-transition: transform .3s;  -moz-transition: transform .3s;
      -webkit-transition: transform .45s; }
      
-.m-at li { width: 308px; overflow: hidden; margin-bottom: 1rem; }
-.m-at .mm { width: 671px;  }
+.m-at li { margin-bottom: 1rem; overflow: hidden; }
 
-.at-m { float: left;}
-.at-l { float: left; margin-right: 1rem;}
-.at-r { float: right; margin-left: 1rem;}
 
 
 .m-md { width: 100%; max-width: 1440px; margin:auto; }
@@ -146,3 +108,43 @@ footer a:hover {color:#333;}
 
 .map {width:96%; margin:auto; max-width:450px; height:30vh; position: relative; margin-left: -3rem}
 
+@media screen and (max-width:768px){
+
+
+}
+
+
+@media screen and (max-width:580px){
+     .logo >img:first-child {display:inline-block; width: 80%; margin-left: -81px} 
+     .hd-sns {display: none;} 
+     .hd-mymenu {display: none;}
+
+}
+
+@media screen and (max-width:480px){
+     header {box-shadow: 0 0 5px rgba(0, 0, 0, 0.61);}
+     .logo >img:first-child {display:inline-block; width: 80%; margin-left: -81px} 
+     /* .logo >img:last-child {position: display:inline-block; left: 0;} */
+     .hd-sns, .navs, .sub-navs {display: none;} 
+     .hd-mymenu {font-size: 10px}
+     .spinner-master * {transition: all 0.3s;  box-sizing: border-box; }
+     .spinner-master { position: relative; margin: 15px; height: 30px; width: 30px;  float: right;   }
+     .spinner-master label {cursor: pointer;  position: absolute; z-index: 99; height: 100%;
+          width: 100%; left: 0; margin-top: -30px   }
+     .spinner-master .spinner { position: absolute; height: 4px; width: 100%; padding: 0;
+          background-color: #000;}   
+     .spinner-master .diagonal.part-1 { position: relative; float: right;  }
+     .spinner-master .horizontal { position: relative; float: right; margin-top: 4px; }
+     .spinner-master .diagonal.part-2 { position: relative; float: right; margin-top: 4px; }
+     .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .horizontal { opacity: 0; }
+     .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-1 { transform: rotate(135deg);
+               -webkit-transform: rotate(135deg); margin-top: 10px; }
+     .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-2 {transform: rotate(-135deg);
+          -webkit-transform: rotate(-135deg); margin-top: -12px;}
+     .m-banner img { width: 100%;}       
+     .m-at ul li a {display: inline; }
+     .m-atf .at-l {width:98%; margin-right:1%; margin-right:1%;}
+     .m-atf .at-m {width:98%; margin-right:1%; margin-right:1%;}
+     .m-atf .at-r {width:98%; margin-right:1%; margin-right:1%;}
+
+}
