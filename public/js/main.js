@@ -29,4 +29,16 @@ $(window).resize(function(){
 }).trigger("resize");
 
 
+$(".mds-li").click(function(){
+    $(this).children().click();
+});
 
+
+	$( window ).resize(function() {
+		var width=window.innerWidth;
+		if (width < 321){
+			jQuery('.hd-top > .logo-m').attr('src','../img/logo-m.jpg')
+		}
+			}).resize();
+	
+	
